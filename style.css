@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Ruda', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Header section styling */
+
+#header{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+
+.navbar1{
+    padding: 0px 50px;
+    height: 65px;
+}
+
+.nav-heading{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* main section */
+#main{
+    position: relative;
+}
+
+.carousel-caption h5{
+    font-weight: 700;
+}
+
+.carousel-caption h5, .carousel-caption p{
+    color: white;
+}
+
+
+/* flex division section */
+#flex-division{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.famous-tour{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    margin: 50px 0px;
+}
+
+.famous-tour .image img{
+    height: 200px;
+    width: 300px;
+}
+
+.famous-tour .tour-desc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.famous-tour .tour-desc p{
+    width: 70%;
+}
+
+.famous-tour .image{
+    display: flex;
+    justify-content: center;
+}
+
+/* Photo gallery section */
+#photo-gallery{
+    height: 900px;
+    width: 100%;
+}
+
+.photo-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;  
+    padding: 10px;
+}
+
+.photo-container .img-1{
+    grid-row: 1/ span 2;
+}
+
+.photo-container .img-8{
+    grid-row: 8/3;
+}
+
+.photo-container .img-9{
+    grid-area:3/span 4/span 5/ span 4;
+}
+
+.photo-container .img-4{
+    grid-column: 4 / span 2;
+}
+.photo-container .img-7{
+    grid-column: 4 / span 2;
+}
+
+.img-1{
+    height: 410px;
+    width: 300px;
+    background-image: url("/Media/photo-gallery/item1.jpg");
+    background-size: cover;
+}
+.img-2{
+    height: 200px;
+    width: 300px;
+    background-image: url("/Media/photo-gallery/item2.jpg");
+    background-size: cover;
+}
+.img-3{
+    height: 200px;
+    width: 300px;
+    background-image: url("/Media/photo-gallery/item3.jpg");
+    background-size: cover;
+}
+.img-4{
+    height: 200px;
+    width: 385px;
+    background-image: url("/Media/photo-gallery/item4.jpg");
+    background-size: cover;
+}
+.img-5{
+    height: 200px;
+    width: 300px;
+    background-image: url("/Media/photo-gallery/item5.jpg");
+    background-size: 300px 200px;
+}
+.img-6{
+    height: 200px;
+    width: 300px;
+    background-image: url("/Media/photo-gallery/item6.jpg");
+    background-size: cover;
+}
+.img-7{
+    height: 200px;
+    width: 385px;
+    background-image: url("/Media/photo-gallery/item7.jpg");
+    /* background-size: cover; */
+    background-size: 380px 200px;
+}
+.img-8{
+    height: 410px;
+    width: 300px;
+    background-image: url("/Media/photo-gallery/item8.jpg");
+    /* background-size: cover; */
+    background-size: 420px 410px;
+}
+.img-9{
+    height: 410px;
+    width: 1009px;
+    background-image: url("/Media/photo-gallery/item9.jpg");
+    /* background-size: cover; */
+    background-size: 1009px 410px;
+}
+
+
+/* Tour card section */
+#tour-card{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 19rem;
+    height: 420px;
+}
+
+.card-text{
+    font-size: small;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.card img{
+    height: 200px;
+    width: 302px;
+}
+
+.card-cta-btn:hover, .btt-btn:hover{
+    background-color: black;
+    font-weight: bold;
+}
+
+/* Footer section */
+
+#footer{
+    height: 300px;
+    background-color: #f1f3f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.upper-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ul-heading h5, .ml-heading h5, .contact-heading h5{
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lower-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright-btn{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 5px;
+}
+
+.cp-text{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.cp-btn{
+    display: flex;
+    align-items: center;
+}
