@@ -87,6 +87,7 @@ html{
 }
 
 /* Photo gallery section */
+
 #photo-gallery{
     height: 900px;
     width: 100%;
@@ -205,7 +206,7 @@ html{
     width: 302px;
 }
 
-.card-cta-btn:hover, .btt-btn:hover{
+.card-cta-btn:hover, .btt-btn:hover, .c-btn:hover{
     background-color: black;
     font-weight: bold;
 }
@@ -263,4 +264,98 @@ html{
 .cp-btn{
     display: flex;
     align-items: center;
+}
+
+
+
+
+
+/* Responsive to website */
+
+@media only screen and (min-width:320px) and (max-width:768px){
+
+    .navbar1 {
+        padding: 0px 50px;
+        height: 65px;
+    }
+
+    #main{
+        top: 60px;
+    }
+
+    #flex-division{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 1700px;
+    }
+
+    .famous-tour{
+        width: 120%;
+    }
+
+    #photo-gallery{
+        height: 650px;
+    }
+    .img-1, .img-8{
+        height: 100px;
+        width: 60px;
+    }
+
+    .img-2, .img-3, .img-6, .img-4, .img-7{
+        height: 45px;
+        width: 65px;    
+    }
+
+    .img-5{
+        height: 45px;
+        width: 65px;    
+        background-size: 65px 45px;
+    }
+
+    .img-9{
+        height: 100px;
+        width: 222px;
+        background-size: 222px 100px;
+    }
+
+    .img-8{
+        background-size: 60px 100px;
+    }
+
+    .img-7{
+        background-size: 65px 45px;
+    }
+
+    #tour-card{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap:10px;
+        height: 1400px;
+    }
+
+    #footer{
+        height: 600px;
+        padding: 20px;
+    }
+    .upper-footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lower-footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .copyright-btn{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .copyright{
+        width: 100%;
+        font-size: 10px;
+        gap: 10px;
+    }
 }
