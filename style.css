@@ -89,92 +89,55 @@ html{
 /* Photo gallery section */
 
 #photo-gallery{
-    height: 900px;
+    height: 850px;
     width: 100%;
 }
 
 .photo-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 10px;  
     padding: 10px;
 }
 
-.photo-container .img-1{
-    grid-row: 1/ span 2;
+.photo-container .item{
+    height: 200px;
 }
 
-.photo-container .img-8{
-    grid-row: 8/3;
-}
-
-.photo-container .img-9{
-    grid-area:3/span 4/span 5/ span 4;
-}
-
-.photo-container .img-4{
-    grid-column: 4 / span 2;
-}
-.photo-container .img-7{
-    grid-column: 4 / span 2;
+.photo-container img{
+    height: 200px;
+    width: 300px;
 }
 
 .img-1{
+    grid-row: 1 / span 2;
+}
+
+.img-1 > img{
     height: 410px;
-    width: 300px;
-    background-image: url("/Media/photo-gallery/item1.jpg");
-    background-size: cover;
 }
-.img-2{
-    height: 200px;
-    width: 300px;
-    background-image: url("/Media/photo-gallery/item2.jpg");
-    background-size: cover;
+
+.img-4, .img-7{
+    grid-column: 4 / span 2;
 }
-.img-3{
-    height: 200px;
-    width: 300px;
-    background-image: url("/Media/photo-gallery/item3.jpg");
-    background-size: cover;
-}
-.img-4{
-    height: 200px;
-    width: 385px;
-    background-image: url("/Media/photo-gallery/item4.jpg");
-    background-size: cover;
-}
-.img-5{
-    height: 200px;
-    width: 300px;
-    background-image: url("/Media/photo-gallery/item5.jpg");
-    background-size: 300px 200px;
-}
-.img-6{
-    height: 200px;
-    width: 300px;
-    background-image: url("/Media/photo-gallery/item6.jpg");
-    background-size: cover;
-}
-.img-7{
-    height: 200px;
-    width: 385px;
-    background-image: url("/Media/photo-gallery/item7.jpg");
-    /* background-size: cover; */
-    background-size: 380px 200px;
+
+.img-4 > img, .img-7 > img{
+    width: 400px;
 }
 .img-8{
-    height: 410px;
-    width: 300px;
-    background-image: url("/Media/photo-gallery/item8.jpg");
-    /* background-size: cover; */
-    background-size: 420px 410px;
+    grid-row: 3 / span 2;
+}
+
+.img-8 > img{
+    height: 400px;
 }
 .img-9{
-    height: 410px;
-    width: 1009px;
-    background-image: url("/Media/photo-gallery/item9.jpg");
-    /* background-size: cover; */
-    background-size: 1009px 410px;
+    grid-column: 2 / span 4;
+}
+
+.img-9 > img {
+    height: 400px;
+    width: 1020px;
 }
 
 
